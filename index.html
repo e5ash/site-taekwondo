@@ -2,19 +2,206 @@
 <html lang="ru">
 	<head>
 		<meta charset="UTF-8" />
-		<title>Title</title>
+		<title>Школа тхэквондо в Сыктывкаре</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+
+		<link rel="stylesheet" href="template/styles/libs.min.css" />
+		<link rel="stylesheet" href="template/styles/style.css" />
+		<link rel="stylesheet" href="template/styles/responsive.css" />
+		<script src="template/scripts/libs.min.js"></script>
+		<script src="template/scripts/scripts.js"></script>
 	</head>
 	<body>
-		<!-- Styles -->
-		<link rel="stylesheet" href="styles/libs.min.css">
-		<link rel="stylesheet" href="styles/style.css">
-		<link rel="stylesheet" href="styles/responsive.css">
-		<!-- /Styles -->
-		
-		<!-- Scripts -->
-		<script src="scripts/libs.min.js"></script>
-		<script src="scripts/scripts.js"></script>
-		<!-- /Scripts -->
+		<div class="popup" id="popup">
+			<form>
+				<div class="input"><div class="icon"><img src="template/img/dot7/bg/face.png" alt=""></div><input type="text" name="name" placeholder="Имя"></div>
+				<div class="input"><div class="icon"><img src="template/img/dot7/bg/phone.png" alt=""></div><input type="text" name="phone" placeholder="+7" class="input-phone" required="required"></div>
+				<button class="button button-yellow">Отправить заявку</button>
+			</form>
+		</div>
+		<div class="panel">
+			<div class="container row">
+				<div class="panel__logo col"><img src="template/img/dot7/uploads/logo.png" alt=""></div>
+				<div class="panel__callback col"><a class="callback" data-fancybox data-src="#popup" href="javascript:;">Заказать звонок</a></div>
+				<div class="panel__contacts col">
+					<p class="phone">+7 (821) 240-00-51</p>
+					<p class="address"><span>адреса залов</span> <img src="template/img/dot7/bg/arrow-bottom-black.png" alt=""></p>
+					<div class="hidden-address-list">
+						<p>1. Школа здоровья, Покровский бульвар, 9</p>
+						<p>2. СОШ 3, Тентюковская 353</p>
+						<p>3. СОШ 16, Димитрова 8</p>
+						<p>4. СОШ 43, Петразаводская 44</p>
+						<p>5. СОШ 18, Старовского 18</p>
+						<p>6. СОШ 25, Малышева 6</p>
+						<p>7. СТЭК, Первомайская 32</p>
+						<p>8. Пгт. Максаковка, Нювчимское шоссе 58</p>
+						<p>9. Центр единоборств, Савина 81/1</p>
+						<p>10. Выльгорт, сош 2. Выльгорт, Домны Калиновой 83</p>
+						<a href="#map" class="button button-transparent">посмотреть на карте</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header">
+			<div class="container">
+				<img src="template/img/dot7/bg/in-korean.png" alt="" class="header__in-korean">
+				<div class="header__title title">Школа тхэквОндо в сыктывкаре</div>
+				<img src="template/img/dot7/bg/taekwondo.png" alt="" class="header__taekwondo">
+				<img src="template/img/dot7/bg/tolik.png" alt="" class="header__anatiliy">
+				<div class="form-block">
+					<div class="form-block__title">Запишитесь на бесплатное пробное занятие!</div>
+					<div class="form-block__elements">
+						<form>
+							<input type="text" name="name" placeholder="Введите имя" class="input">
+							<input type="text" name="phone" placeholder="Введите телефон*" class="input input-phone" required="required">
+							<button class="button button-yellow">Записаться на занятие</button>
+						</form>
+					</div>
+				</div>
+				<div class="header__arrow-down"><a href="#advanteges"><span>Узнать подробнее</span><img src="template/img/dot7/bg/arrow-bottom.png" alt=""></a></div>
+			</div>
+		</div>
+		<div class="main">
+			<div class="wrapper">
+				<div class="container">
+					<div class="advanteges row w5" id="advanteges">
+						<div class="advanteges__item col">
+							<div class="advanteges__title title"><img src="template/img/dot7/bg/medal.png" alt=""></div>
+							<div class="advanteges__desc">именитые тренера</div>
+						</div>
+						<div class="advanteges__item col">
+							<div class="advanteges__title title">45</div>
+							<div class="advanteges__desc">мастеров спорта <br />мы подготовили</div>
+						</div>
+						<div class="advanteges__item col">
+							<div class="advanteges__title title">11</div>
+							<div class="advanteges__desc">залов в Сыктывкаре</div>
+						</div>
+						<div class="advanteges__item col">
+							<div class="advanteges__title title"><img src="template/img/dot7/bg/peoples.png" alt=""></div>
+							<div class="advanteges__desc">Любой возраст <br />(от 3 до 80 лет)</div>
+						</div>
+						<div class="advanteges__item col">
+							<div class="advanteges__title title">150+</div>
+							<div class="advanteges__desc">черных поясов</div>
+						</div>
+					</div>
+					<div class="services">
+						<div class="services__title title">Виды тренировок</div>
+						<div class="services__list">
+							<div class="services__item">
+								<div class="services__img"><img src="template/img/dot7/uploads/services/1.png" alt=""></div>
+								<div class="services__subtitle">Персональные 1 на 1</div>
+								<a data-fancybox data-src="#popup" href="javascript:;" class="services__button button-yellow callback button">Записаться на бесплатное <br />заниятие</a>
+							</div>
+							<div class="services__item">
+								<div class="services__img"><img src="template/img/dot7/uploads/services/2.png" alt=""></div>
+								<div class="services__subtitle">Минигруппы от 6 до 11 человек</div>
+								<a data-fancybox data-src="#popup" href="javascript:;" class="services__button button-yellow callback button">Записаться на бесплатное <br />заниятие</a>
+							</div>
+							<div class="services__item">
+								<div class="services__img"><img src="template/img/dot7/uploads/services/3.png" alt=""></div>
+								<div class="services__subtitle">Групповые занятия</div>
+								<a data-fancybox data-src="#popup" href="javascript:;" class="services__button button-yellow callback button">Записаться на бесплатное <br />заниятие</a>
+							</div>
+							<div class="services__item">
+								<div class="services__img"><img src="template/img/dot7/uploads/services/4.png" alt=""></div>
+								<div class="services__subtitle">Индивидуальные 2,3 занимающиеся</div>
+								<a data-fancybox data-src="#popup" href="javascript:;" class="services__button button-yellow callback button">Записаться на бесплатное <br />заниятие</a>
+							</div>
+							<div class="services__item">
+								<div class="services__img"><img src="template/img/dot7/uploads/services/5.png" alt=""></div>
+								<div class="services__subtitle">Курсы самообороны (краткосрочные)</div>
+								<a data-fancybox data-src="#popup" href="javascript:;" class="services__button button-yellow callback button">Записаться на бесплатное <br />заниятие</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="gym">
+				<div class="gym__title title container">Наши залы</div>
+				<div class="gym__list row">
+					<div class="gym__item col"><a href="template/img/dot7/uploads/gym/1.png" data-fancybox="gym"><img src="template/img/dot7/uploads/gym/1.png" alt=""></a></div>
+					<div class="gym__item col"><a href="template/img/dot7/uploads/gym/2.png" data-fancybox="gym"><img src="template/img/dot7/uploads/gym/2.png" alt=""></a></div>
+					<div class="gym__item col"><a href="template/img/dot7/uploads/gym/3.png" data-fancybox="gym"><img src="template/img/dot7/uploads/gym/3.png" alt=""></a></div>
+					<div class="gym__item col"><a href="template/img/dot7/uploads/gym/4.png" data-fancybox="gym"><img src="template/img/dot7/uploads/gym/4.png" alt=""></a></div>
+					<div class="gym__item col"><a href="template/img/dot7/uploads/gym/5.png" data-fancybox="gym"><img src="template/img/dot7/uploads/gym/5.png" alt=""></a></div>
+					<div class="gym__item col"><a href="template/img/dot7/uploads/gym/6.png" data-fancybox="gym"><img src="template/img/dot7/uploads/gym/6.png" alt=""></a></div>
+				</div>
+			</div>
+			<div class="videos">
+				<div class="container">
+					<div class="videos__title title">Что о нас говорят</div>
+					<div class="videos__list">
+						<div class="video">
+							<a href="https://www.youtube.com/watch?v=TKEbws4QhEk" class="video__wrapper" data-fancybox><img src="template/img/dot7/uploads/video/1.png" alt=""></a>
+							<div class="video__subtitle">Название видеоотзыва</div>
+						</div>
+						<div class="video">
+							<a href="https://www.youtube.com/watch?v=TKEbws4QhEk" class="video__wrapper" data-fancybox><img src="template/img/dot7/uploads/video/1.png" alt=""></a>
+							<div class="video__subtitle">Название видеоотзыва</div>
+						</div>
+						<div class="video">
+							<a href="https://www.youtube.com/watch?v=TKEbws4QhEk" class="video__wrapper" data-fancybox><img src="template/img/dot7/uploads/video/1.png" alt=""></a>
+							<div class="video__subtitle">Название видеоотзыва</div>
+						</div>
+						<div class="video">
+							<a href="https://www.youtube.com/watch?v=TKEbws4QhEk" class="video__wrapper" data-fancybox><img src="template/img/dot7/uploads/video/1.png" alt=""></a>
+							<div class="video__subtitle">Название видеоотзыва</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="form">
+				<div class="container row">
+					<div class="form__left col">
+						<div class="form__title">Запишись на бесплатное пробное занятие</div>
+						<div class="form__text">С ТОПовым тренером России о опытом тренерства более 20 лет.</div>
+					</div>
+					<div class="form__right col">
+						<div class="form__subtitle">Бесплатное пробное занятие с Заслуженным тренером России</div>
+						<div class="form__elements">
+							<form>
+								<input type="text" name="name" placeholder="Введите имя" class="input">
+								<input type="text" name="phone" placeholder="Введите телефон*" class="input input-phone" required="required">
+								<button class="button button-yellow">Записаться на занятие</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="map" id="contacts">
+				<div class="container row">
+					<div class="map__content">
+						<div class="map__title title">Мы рядом!</div>
+						<div class="map__text">
+							<p>1. Школа здоровья, Покровский бульвар, 9</p>
+							<p>2. СОШ 3, Тентюковская 353</p>
+							<p>3. СОШ 16, Димитрова 8</p>
+							<p>4. СОШ 43, Петразаводская 44</p>
+							<p>5. СОШ 18, Старовского 18</p>
+							<p>6. СОШ 25, Малышева 6</p>
+							<p>7. СТЭК, Первомайская 32</p>
+							<p>8. Пгт. Максаковка, Нювчимское шоссе 58</p>
+							<p>9. Центр единоборств, Савина 81/1</p>
+							<p>10. Выльгорт, сош 2. Выльгорт, Домны Калиновой 83</p>
+						</div>
+					</div>
+				</div>
+				<div class="map__wrapper" id="map"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A5a40f3e60c7a67a50c20bcb8965eb3d7a3abb0750c3ac3a82ef21bae79b52994&amp;width=100%25&amp;height=595&amp;lang=ru_RU&amp;scroll=true"></script></div>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="container row">
+				<div class="footer__left col">
+					<p>Наименование предприятия</p>
+					<p>ИНН</p>
+				</div>
+				<div class="footer__right col">
+					<p><a href="tel:+7 (812) 240-00-51">+7 (812) 240-00-51</a></p>
+					<p><a href="mailto:taekwon.do@mail.ru">taekwon.do@mail.ru</a></p>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>

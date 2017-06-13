@@ -1,21 +1,11 @@
 <?php
 if (isset($_POST['name'])) {$name = $_POST['name'];}
-if (isset($_POST['tel'])) {$tel = $_POST['tel'];}
-if (isset($_POST['email'])) {$email = $_POST['email'];}
-if (isset($_POST['comment'])) {$comment = $_POST['comment'];}
-if (isset($_POST['to'])) {$to = $_POST['to'];}
+if (isset($_POST['phone'])) {$phone = $_POST['phone'];}
 
-$message = "Имя: $name\nТелефон: $tel";
-
-if ($email== true) {
-	$message .= "\nПочта: $email";
-}
-if ($comment == true) {
-	$message .= "\nКомментарий: $comment";
-}
+$message = "Имя: $name\nТелефон: $phone";
 
 
-// $to = "comediant1989@yandex.ru";
+$to = "e5ash.bro@gmail.com";
 $headers = "Content-type: text/plain; charset = UTF-8";
 $subject = "Новый заказ с сайта";
 $send = mail($to, $subject, $message, $headers);
